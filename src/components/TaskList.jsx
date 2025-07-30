@@ -5,13 +5,13 @@ function TaskList() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch("https://your-firebase-url.com/tasks")
+    fetch("http://localhost:3001/tasks")
       .then((res) => res.json())
       .then(setTasks);
   }, []);
 
   function handleDelete(id) {
-    fetch(`https://your-firebase-url.com/tasks/${id}`, { method: "DELETE" });
+    fetch(`http://localhost:3001/tasks/${id}`, { method: "DELETE" });
     setTasks(tasks.filter((task) => task.id !== id));
   }
 
