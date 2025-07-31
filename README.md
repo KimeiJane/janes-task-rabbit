@@ -11,7 +11,7 @@ This is a beginner-friendly task tracking app built with React.
 ## Technologies
 - React
 - React Router
-- Firebase or JSON Server (for backend)
+- JSON Server (for backend)
 
 ## Pages
 - Home 
