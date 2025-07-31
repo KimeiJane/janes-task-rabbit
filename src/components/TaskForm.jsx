@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 function TaskForm() {
   const [title, setTitle] = useState("");
   const navigate = useNavigate();
